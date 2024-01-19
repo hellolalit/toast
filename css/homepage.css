@@ -1,8 +1,8 @@
-/* titillium-web-200 - latin */
+/* Kanit 400 regular */
 @font-face {
     font-family: "Kanit";
-    font-style: Regular;
-    font-weight: 400;
+    /* font-style: Regular;
+    font-weight: 400; */
     src: url("../assets/fonts/Kanit/Kanit-Regular.ttf");
 }
 
@@ -14,5 +14,89 @@
 }
 
 body {
-    background: rgb(255, 241, 215);
+    background: rgb(252, 249, 244);
+}
+
+.openToast {
+    border: none;
+    border-radius: 5px;
+    height: 3rem;
+    width: 10rem;
+    background: rgb(34, 203, 34);
+    color: white;
+    margin: 1.5rem;
+    font-size: 16px;
+}
+
+.openToast:active {
+    transform: scale(0.98);
+    /* Scaling button to 0.98 to its original size */
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+    /* Lowering the shadow */
+}
+
+.closeToast {
+    border: none;
+    border-radius: 5px;
+    height: 3rem;
+    width: 10rem;
+    background: rgb(214, 11, 11);
+    color: white;
+    margin: 1.5rem;
+    font-size: 16px;
+}
+
+.closeToast:active {
+    transform: scale(0.98);
+    /* Scaling button to 0.98 to its original size */
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+    /* Lowering the shadow */
+}
+
+.openLoginToast {
+    border: none;
+    border-radius: 5px;
+    height: 3rem;
+    width: 18rem;
+    background: rgb(34, 203, 34);
+    color: white;
+    margin: 1.5rem;
+    font-size: 16px;
+}
+
+.openLoginToast:active {
+    transform: scale(0.98);
+    /* Scaling button to 0.98 to its original size */
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+    /* Lowering the shadow */
+}
+
+.toast {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 3%;
+    right: 1.6%;
+    background: rgb(0, 222, 67);
+    border-radius: 12px;
+    font-weight: 500;
+    height: 5rem;
+    width: 17rem;
+    /* transform: translate(-50%, -50%); */
+    z-index: 10000;
+}
+
+.toast img {
+    min-width: 30px;
+    max-height: 30px;
+    margin: 0.2rem 0.8rem;
+    border: 3.5px solid white;
+    border-radius: 50%;
+}
+
+.toast p {
+    font-size: 20px;
+    margin-bottom: 0.4rem;
+    color: white;
 }
